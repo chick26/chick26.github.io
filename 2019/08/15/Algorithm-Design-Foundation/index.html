@@ -91,7 +91,7 @@
 <meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-manager.jpg">
 <meta property="og:image" content="https://www.zybuluo.com/static/img/toolbar-reader.jpg">
 <meta property="og:image" content="https://www.zybuluo.com/static/img/file-list.png">
-<meta property="og:updated_time" content="2019-08-15T09:48:59.224Z">
+<meta property="og:updated_time" content="2019-08-16T16:17:46.110Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Algorithm Design Foundation">
 <meta name="twitter:description" content="Algorithm Design FoundationTwo Basic Example Model 1 Input &amp;emsp; 任务集:$S={1, 2, 3, …, n}$, 第j项任务加工时间：$t_j\in\mathbb{N}$Output&amp;ensp; 调度$I$,$S$的排列$i_1,i_2,…,i_n$目标函数 $I$的完成时间: $t(I)=$$\left(\sum_{k=1}^{">
@@ -373,7 +373,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2.2k
+                  2.4k
                 </span>
               
 
@@ -400,10 +400,19 @@
       
         <h1 id="Algorithm-Design-Foundation"><a href="#Algorithm-Design-Foundation" class="headerlink" title="Algorithm Design Foundation"></a>Algorithm Design Foundation</h1><h2 id="Two-Basic-Example"><a href="#Two-Basic-Example" class="headerlink" title="Two Basic Example"></a>Two Basic Example</h2><ul>
 <li>Model 1<blockquote>
-<p><strong>Input</strong> &emsp; 任务集:$S={1, 2, 3, …, n}$, 第j项任务加工时间：$t_j\in\mathbb{N}$<br><strong>Output</strong>&ensp; 调度$I$,$S$的排列$i_1,i_2,…,i_n$<br><strong>目标函数</strong> $I$的完成时间: $t(I)=$$\left(\sum_{k=1}^{n}(n-k+1)t_ik\right)$<br><strong>解决方法</strong> $t(I^*)=min\left\{t(I)|I为S的排列\right\}$</p>
+<p><strong>Input</strong> &emsp; 任务集:$S={1, 2, 3, …, n}$, 第j项任务加工时间：$t_j\in\mathbb{N}$<br><strong>Output</strong>&ensp; 调度$I$,$S$的排列$i_1,i_2,…,i_n$<br><strong>目标函数</strong> $I$的完成时间: $t(I)=$$\left(\sum_{k=1}^{n}(n-k+1)t_ik\right)$<br><strong>解决方法</strong> $t(I^*)=min\left\{t(I)|I为S的排列\right\}$<br><br><strong>贪心算法(Greedy)</strong> 加工时间短的优先</p>
 </blockquote>
 </li>
 </ul>
+<ul>
+<li>Model 2<blockquote>
+<p><strong>Input</strong> &emsp; 项目数(n)，钱数(m)，效益函数($f_i(x),i=1,2,3,…,n$)<br><strong>Output</strong>&ensp; $x=1,2,3,…,m(每个项目投入的金额)$<br><strong>解决方法</strong> $n维向量<x_1,x_2,...,x_n>,x_i为投资i的金额$<br><strong>目标函数</strong> $max\sum_{i=1}^{n}f_i(x_i)$ &ensp; $s.t. \sum_{i=1}^{n}x_i=m,x_i\in\mathbb{N}$<br></x_1,x_2,...,x_n></p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><strong>穷举法</strong>:<br><br><strong>效率(等效法)</strong>: &emsp;$1….1(x_1个)01…1(x_2个)0….01…1(x_n个)$，因为$\sum x_i=m$,一共有m个1；n个项目，一共n-1个0。所以序列个数为$\binom{m}{m+n-1}=\frac{(m+n-1)!}{m!(n-1)!}=\Omega((1+\varepsilon)^{m+n-1})$</p>
+</blockquote>
 <ul>
 <li>非比较类排序<ul>
 <li>计数排序</li>
