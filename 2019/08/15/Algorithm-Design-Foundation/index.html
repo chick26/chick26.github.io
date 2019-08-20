@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Chick&#39;s Bloo^_^oog">
 <meta property="og:description" content="Algorithm Design FoundationTwo Basic Example Model 1 Input &amp;emsp; 任务集:$S={1, 2, 3, …, n}$, 第j项任务加工时间：$t_j\in\mathbb{N}$Output&amp;ensp; 调度$I$,$S$的排列$i_1,i_2,…,i_n$目标函数 $I$的完成时间: $t(I)=$$\left(\sum_{k=1}^{">
 <meta property="og:locale" content="zn-Hans">
-<meta property="og:updated_time" content="2019-08-20T04:53:20.452Z">
+<meta property="og:updated_time" content="2019-08-20T08:44:57.255Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Algorithm Design Foundation">
 <meta name="twitter:description" content="Algorithm Design FoundationTwo Basic Example Model 1 Input &amp;emsp; 任务集:$S={1, 2, 3, …, n}$, 第j项任务加工时间：$t_j\in\mathbb{N}$Output&amp;ensp; 调度$I$,$S$的排列$i_1,i_2,…,i_n$目标函数 $I$的完成时间: $t(I)=$$\left(\sum_{k=1}^{">
@@ -368,7 +368,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  236
+                  315
                 </span>
               
 
@@ -411,6 +411,54 @@
 <blockquote>
 <p><strong>穷举法</strong>:<br><br><strong>效率(等效法)</strong>: &emsp;$1….1(x_1个)01…1(x_2个)0….01…1(x_n个)$，因为$\sum x_i=m$,一共有m个1；n个项目，一共n-1个0。所以序列个数为$\binom{m}{m+n-1}=\frac{(m+n-1)!}{m!(n-1)!}=\Omega((1+\varepsilon)^{m+n-1})$</p>
 </blockquote>
+<h2 id="Efficiency-Calculation"><a href="#Efficiency-Calculation" class="headerlink" title="Efficiency Calculation"></a>Efficiency Calculation</h2><h3 id="以排序算法为例"><a href="#以排序算法为例" class="headerlink" title="以排序算法为例"></a>以排序算法为例</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">排序方法</th>
+<th style="text-align:center">时间复杂度(最坏)</th>
+<th style="text-align:center">时间复杂度(平均)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">插入排序</td>
+<td style="text-align:center">$O(n^2)$</td>
+<td style="text-align:center">$O(n^2)$</td>
+</tr>
+<tr>
+<td style="text-align:center">希尔排序</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">选择排序</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">堆排序</td>
+<td style="text-align:center">$O(nlogn)$</td>
+<td style="text-align:center">$O(nlogn)$</td>
+</tr>
+<tr>
+<td style="text-align:center">冒泡排序</td>
+<td style="text-align:center">$O(n^2)$</td>
+<td style="text-align:center">$O(n^2)$</td>
+</tr>
+<tr>
+<td style="text-align:center">快速排序</td>
+<td style="text-align:center">$O(n^2)$</td>
+<td style="text-align:center">$O(nlogn)$</td>
+</tr>
+<tr>
+<td style="text-align:center">归并排序</td>
+<td style="text-align:center">$O(nlogn)$</td>
+<td style="text-align:center">$O(nlogn)$</td>
+</tr>
+</tbody>
+</table>
+</div>
 
       
     </div>
@@ -621,7 +669,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm-Design-Foundation"><span class="nav-number">1.</span> <span class="nav-text">Algorithm Design Foundation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-Basic-Example"><span class="nav-number">1.1.</span> <span class="nav-text">Two Basic Example</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm-Design-Foundation"><span class="nav-number">1.</span> <span class="nav-text">Algorithm Design Foundation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Two-Basic-Example"><span class="nav-number">1.1.</span> <span class="nav-text">Two Basic Example</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Efficiency-Calculation"><span class="nav-number">1.2.</span> <span class="nav-text">Efficiency Calculation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以排序算法为例"><span class="nav-number">1.2.1.</span> <span class="nav-text">以排序算法为例</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
