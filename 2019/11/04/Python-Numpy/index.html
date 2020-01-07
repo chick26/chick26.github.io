@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Numpy,">
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="这个婆娘不是人">
-<meta name="keywords" content="Data &amp; Algorithms">
+<meta name="keywords" content="Numpy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python-Numpy">
 <meta property="og:url" content="http://github.com/chick26/2019/11/04/Python-Numpy/index.html">
 <meta property="og:site_name" content="Chick&#39;s Bloo^_^oog">
 <meta property="og:description" content="这个婆娘不是人">
 <meta property="og:locale" content="zn-Hans">
-<meta property="og:updated_time" content="2019-11-04T13:52:02.421Z">
+<meta property="og:updated_time" content="2019-11-27T02:46:14.101Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python-Numpy">
 <meta name="twitter:description" content="这个婆娘不是人">
@@ -329,6 +329,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/04/Python-Numpy/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/04/Python-Numpy/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -398,6 +408,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Numpy/" rel="tag"># Numpy</a>
+          
+        </div>
+      
 
       
       
@@ -416,6 +432,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/01/07/JavaFundation/" rel="prev" title="JavaFundation">
+                JavaFundation <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -516,7 +536,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -529,7 +549,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -576,7 +596,7 @@ var jiathis_config={
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -746,6 +766,28 @@ var jiathis_config={
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zPxebIjqyjT98i7JLbkROpgK-gzGzoHsz',
+        appKey: '7mWFVPMwwDO1O9yACOhd3ly8',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -1076,7 +1118,7 @@ var jiathis_config={
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("kbBbq1PTDgDcIAhKgxqL85Ix-gzGzoHsz", "TSudqrhp3CeBNmUIg9lO4m6b");</script>
+  <script>AV.initialize("", "");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
