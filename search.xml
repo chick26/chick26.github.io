@@ -3,7 +3,11 @@
   <entry>
     <title><![CDATA[Html Function]]></title>
     <url>%2F2020%2F08%2F05%2FHtml-Function%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[HTML 元素 开始标签 元素内容 结束标签 \ 定义整个 HTML 文档 \&lt;/html&gt; \ 定义 HTML 文档的主体 \&lt;/body&gt; \ 第x个标题 \&lt;/h x&gt; \ 定义 HTML 文档中的一个段落 \&lt;/p&gt; \ 换行 无 \ 标记注释 无 \ 定义Html链接 \&lt;/a&gt; \ 定义Html图像 无 HTML 属性详情参考使用手册 属性 值 描述 class classname 规定元素的类名（classname） id id 规定元素的唯一 id style style_definition 规定元素的行内样式（inline style) title text 规定元素的额外信息（可在工具提示中显示） 注： 属性值应该始终被包括在引号内。双引号是最常用的，不过使用单引号也没有问题。 在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：1name='Bill "HelloWorld" Gates' 文本格式化文字格式化标签 标签 描述 \ 定义粗体文本 \ 定义大号字 \ 定义着重文字 \ 定义斜体字 \ 定义小号字 \ 定义加重语气 \ 定义下标字 \ 定义上标字 \ 定义插入字 \ 定义删除字 “计算机”输出标签 标签 描述 \ 定义计算机代码 \ 定义键盘码 \ 定义计算机代码样本 \ 定义打字机代码 \ 定义变量 \ 定义预格式文本 引用、引用和术语定义 标签 描述 \ 定义缩写 \ 定义首字母缩写 \ 定义地址 \ 定义文字方向 \ 定义长的引用 \ 定义短的引用语 \ 定义引用、引证 \ 定义一个定义项目]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Html</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Html Introduction]]></title>
