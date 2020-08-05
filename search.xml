@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Html Function]]></title>
+    <url>%2F2020%2F08%2F05%2FHtml-Function%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Html Introduction]]></title>
+    <url>%2F2020%2F08%2F05%2FHtml-Learning%2F</url>
+    <content type="text"><![CDATA[什么是 HTML？HTML 是用来描述网页的一种语言 HTML 指的是超文本标记语言 (Hyper Text Markup Language)HTML 不是一种编程语言，而是一种标记语言 (markup language)标记语言是一套标记标签 (markup tag)HTML 使用标记标签来描述网页 HTML 标签HTML 标记标签通常被称为 HTML 标签 (HTML tag) HTML 标签是由尖括号包围的关键词，比如 \ HTML 标签通常是成对出现的，比如 \ 和 \&lt;\b&gt; 标签对中的第一个标签是开始标签，第二个标签是结束标签开始和结束标签也被称为开放标签和闭合标签 HTML 文档 = 网页HTML 文档描述网页HTML 文档包含 HTML 标签和纯文本HTML 文档也被称为网页 代码示例123456789&lt;html&gt;&lt;body&gt;&lt;h1&gt;我的第一个标题&lt;/h1&gt;&lt;p&gt;我的第一个段落。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; 例子解释\ 与 \ 之间的文本描述网页\ 与 \ 之间的文本是可见的页面内容\ 与 \ 之间的文本被显示为标题\ 与 \ 之间的文本被显示为段落]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>Html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Regression]]></title>
+    <url>%2F2020%2F03%2F04%2FRegression%2F</url>
+    <content type="text"><![CDATA[Regression回归，即找到一个函数(Function)，通过输入特征 x，输出一个数值(Scalar) 模型步骤 Step 1 模型假设，选择模型框架 假设： Linear Model $y=b+\sum w_ix_i$]]></content>
+      <tags>
+        <tag>Mechine Learning</tag>
+        <tag>Regression</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JavaFundation]]></title>
     <url>%2F2020%2F01%2F07%2FJavaFundation%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[1.面向过程和面向对象面向对象： 面向对象易维护、易复用、易扩展。 面向过程： asd]]></content>
       <tags>
         <tag>Java</tag>
       </tags>
@@ -19,7 +42,7 @@
   <entry>
     <title><![CDATA[DataMining with KNN]]></title>
     <url>%2F2019%2F09%2F28%2FDataMining-with-KNN%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[K-NN算法 优点： 精度高，对异常值不敏感，无数据输入假定 缺点： 计算复杂度高 st=>start: 开始语句 in=>inputoutput: 输入值 e=>end: 结束语句 op=>operation: 执行操作 cond=>condition: 是否成立？ out=>inputoutput: 输出值 st->in->op->cond cond(yes)->out cond(no)->op out->e{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);]]></content>
       <tags>
         <tag>DataMining</tag>
         <tag>KNN</tag>

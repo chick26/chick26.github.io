@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="DataMining,KNN,">
+  <meta name="keywords" content="Mechine Learning,Regression,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="K-NN算法 优点： 精度高，对异常值不敏感，无数据输入假定 缺点： 计算复杂度高  st=&amp;gt;start: 开始语句 in=&amp;gt;inputoutput: 输入值 e=&amp;gt;end: 结束语句 op=&amp;gt;operation: 执行操作 cond=&amp;gt;condition: 是否成立？ out=&amp;gt;inputoutput: 输出值  st-&amp;gt;in-&amp;gt;op-&amp;gt;cond cond(yes)-&amp;gt;out cond(no)-">
-<meta name="keywords" content="DataMining,KNN">
+<meta name="description" content="Regression回归，即找到一个函数(Function)，通过输入特征 x，输出一个数值(Scalar) 模型步骤 Step 1 模型假设，选择模型框架  假设： Linear Model $y=b+\sum w_ix_i$">
+<meta name="keywords" content="Mechine Learning,Regression">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DataMining with KNN">
-<meta property="og:url" content="http://github.com/chick26/2019/09/28/DataMining-with-KNN/index.html">
+<meta property="og:title" content="Regression">
+<meta property="og:url" content="http://github.com/chick26/2020/03/04/Regression/index.html">
 <meta property="og:site_name" content="Chick&#39;s Bloo^_^oog">
-<meta property="og:description" content="K-NN算法 优点： 精度高，对异常值不敏感，无数据输入假定 缺点： 计算复杂度高  st=&amp;gt;start: 开始语句 in=&amp;gt;inputoutput: 输入值 e=&amp;gt;end: 结束语句 op=&amp;gt;operation: 执行操作 cond=&amp;gt;condition: 是否成立？ out=&amp;gt;inputoutput: 输出值  st-&amp;gt;in-&amp;gt;op-&amp;gt;cond cond(yes)-&amp;gt;out cond(no)-">
+<meta property="og:description" content="Regression回归，即找到一个函数(Function)，通过输入特征 x，输出一个数值(Scalar) 模型步骤 Step 1 模型假设，选择模型框架  假设： Linear Model $y=b+\sum w_ix_i$">
 <meta property="og:locale" content="zn-Hans">
-<meta property="og:updated_time" content="2020-01-14T00:31:35.406Z">
+<meta property="og:updated_time" content="2020-03-04T07:40:03.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DataMining with KNN">
-<meta name="twitter:description" content="K-NN算法 优点： 精度高，对异常值不敏感，无数据输入假定 缺点： 计算复杂度高  st=&amp;gt;start: 开始语句 in=&amp;gt;inputoutput: 输入值 e=&amp;gt;end: 结束语句 op=&amp;gt;operation: 执行操作 cond=&amp;gt;condition: 是否成立？ out=&amp;gt;inputoutput: 输出值  st-&amp;gt;in-&amp;gt;op-&amp;gt;cond cond(yes)-&amp;gt;out cond(no)-">
+<meta name="twitter:title" content="Regression">
+<meta name="twitter:description" content="Regression回归，即找到一个函数(Function)，通过输入特征 x，输出一个数值(Scalar) 模型步骤 Step 1 模型假设，选择模型框架  假设： Linear Model $y=b+\sum w_ix_i$">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://github.com/chick26/2019/09/28/DataMining-with-KNN/">
+  <link rel="canonical" href="http://github.com/chick26/2020/03/04/Regression/">
 
 
 
 
 
-  <title>DataMining with KNN | Chick's Bloo^_^oog</title>
+  <title>Regression | Chick's Bloo^_^oog</title>
   
 
 
@@ -286,7 +286,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://github.com/chick26/2019/09/28/DataMining-with-KNN/">
+    <link itemprop="mainEntityOfPage" href="http://github.com/chick26/2020/03/04/Regression/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="LI Zhicheng">
@@ -303,7 +303,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">DataMining with KNN</h1>
+          <h1 class="post-title" itemprop="name headline">Regression</h1>
         
 
         <div class="post-meta">
@@ -315,8 +315,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-28T17:08:05+08:00">
-                2019-09-28
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-04T14:29:49+08:00">
+                2020-03-04
               </time>
             
 
@@ -334,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/09/28/DataMining-with-KNN/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/28/DataMining-with-KNN/" itemprop="commentCount"></span>
+                <a href="/2020/03/04/Regression/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/04/Regression/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -357,7 +357,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  120
+                  49
                 </span>
               
 
@@ -382,21 +382,15 @@
       
 
       
-        <h1 id="K-NN算法"><a href="#K-NN算法" class="headerlink" title="K-NN算法"></a>K-NN算法</h1><ul>
-<li>优点： 精度高，对异常值不敏感，无数据输入假定</li>
-<li>缺点： 计算复杂度高</li>
+        <h1 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h1><p>回归，即找到一个函数(Function)，通过输入特征 x，输出一个数值(Scalar)</p>
+<h2 id="模型步骤"><a href="#模型步骤" class="headerlink" title="模型步骤"></a>模型步骤</h2><ul>
+<li><p><strong>Step 1</strong> 模型假设，选择模型框架</p>
+<blockquote>
+<p>假设： Linear Model $y=b+\sum w_ix_i$</p>
+</blockquote>
+</li>
+<li></li>
 </ul>
-<p><div id="flowchart-0" class="flow-chart"></div><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: 开始语句
-in=>inputoutput: 输入值
-e=>end: 结束语句
-op=>operation: 执行操作
-cond=>condition: 是否成立？
-out=>inputoutput: 输出值
-
-st->in->op->cond
-cond(yes)->out
-cond(no)->op
-out->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
       
     </div>
@@ -414,9 +408,9 @@ out->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scal
       
         <div class="post-tags">
           
-            <a href="/tags/DataMining/" rel="tag"># DataMining</a>
+            <a href="/tags/Mechine-Learning/" rel="tag"># Mechine Learning</a>
           
-            <a href="/tags/KNN/" rel="tag"># KNN</a>
+            <a href="/tags/Regression/" rel="tag"># Regression</a>
           
         </div>
       
@@ -429,8 +423,8 @@ out->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scal
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/20/Learning-Plan/" rel="next" title="Learning Plan">
-                <i class="fa fa-chevron-left"></i> Learning Plan
+              <a href="/2020/01/07/JavaFundation/" rel="next" title="JavaFundation">
+                <i class="fa fa-chevron-left"></i> JavaFundation
               </a>
             
           </div>
@@ -439,8 +433,8 @@ out->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scal
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/11/04/Python-Numpy/" rel="prev" title="Python-Numpy">
-                Python-Numpy <i class="fa fa-chevron-right"></i>
+              <a href="/2020/08/05/Html-Learning/" rel="prev" title="Html Introduction">
+                Html Introduction <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -607,7 +601,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#K-NN算法"><span class="nav-number">1.</span> <span class="nav-text">K-NN算法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Regression"><span class="nav-number">1.</span> <span class="nav-text">Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#模型步骤"><span class="nav-number">1.1.</span> <span class="nav-text">模型步骤</span></a></li></ol></li></ol></div>
             
 
           </div>
