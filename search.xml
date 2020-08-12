@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[VueLearning]]></title>
+    <url>%2F2020%2F08%2F12%2FVueLearning%2F</url>
+    <content type="text"><![CDATA[Vue.jsVue.js安装 方法一直接CND引入 1234&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;&lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;&lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;&lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt; 方式二下载和引入 12&lt;!-- 开发环境 --&gt; https://vuejs.org/js/vue.js&lt;!-- 生产环境 --&gt; https://vuejs.org/js/vue.min.js 方法三后续通过webpack和CIL的使用 初识Vue实例123456789101112131415161718192021222324&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt; &lt;!--定义一个元素--&gt; &lt;div id='app'&gt;&lt;/div&gt; &lt;!--本地加载Vuejs--&gt; &lt;script src="./js/vue.js"&gt;&lt;/script&gt; &lt;script&gt; const app = new vue(&#123; el: '#app', //挂载需要管理的元素 data: &#123; //定义 &#125; &#125;) &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <tags>
+        <tag>Html</tag>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Html Function]]></title>
     <url>%2F2020%2F08%2F05%2FHtml-Function%2F</url>
     <content type="text"><![CDATA[HTML 元素 开始标签 元素内容 结束标签 &#60;html&gt; 定义整个 HTML 文档 \&lt;/html&gt; &#60;body&gt; 定义 HTML 文档的主体 \&lt;/body&gt; &#60;h x&gt; 第x个标题 \&lt;/h x&gt; &#60;p&gt; 定义 HTML 文档中的一个段落 \&lt;/p&gt; &#60;br /&gt; 换行 无 &#60;!— xxx —&gt; 标记注释 无 &#60;a href=”default.htm” &gt; 定义Html链接 \&lt;/a&gt; &#60;img src=”” width=”” height=”” /&gt; 定义Html图像 无 HTML 属性详情参考使用手册 属性 值 描述 class classname 规定元素的类名（classname） id id 规定元素的唯一 id style style_definition 规定元素的行内样式（inline style) title text 规定元素的额外信息（可在工具提示中显示） 注： 属性值应该始终被包括在引号内。双引号是最常用的，不过使用单引号也没有问题。 在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：1name='Bill "HelloWorld" Gates' 文本格式化文字格式化标签 标签 描述 &#60;b&gt; 定义粗体文本 &#60;big&gt; 定义大号字 &#60;em&gt; 定义着重文字 &#60;i&gt; 定义斜体字 &#60;small&gt; 定义小号字 &#60;strong&gt; 定义加重语气 &#60;sub&gt; 定义下标字 &#60;sup&gt; 定义上标字 &#60;ins&gt; 定义插入字 &#60;del&gt; 定义删除字 “计算机”输出标签 标签 描述 &#60;code&gt; 定义计算机代码 &#60;kbd&gt; 定义键盘码 &#60;samp&gt; 定义计算机代码样本 &#60;tt&gt; 定义打字机代码 &#60;var&gt; 定义变量 &#60;pre&gt; 定义预格式文本 引用、引用和术语定义 标签 描述 &#60;abbr&gt; 定义缩写 &#60;acronym&gt; 定义首字母缩写 &#60;address&gt; 定义地址 &#60;bdo&gt; 定义文字方向 &#60;blockquote&gt; 定义长的引用 &#60;q&gt; 定义短的引用语 &#60;cite&gt; 定义引用、引证 &#60;dfn&gt; 定义一个定义项目 HTML5 语义元素 标签 描述 header 定义文档或节的页眉 nav 定义导航链接的容器 section 定义文档中的节 article 定义独立的自包含文章 aside 定义内容之外的内容（比如侧栏) footer 定义文档或节的页脚 details 定义额外的细节 summary 定义 details 元素的标题]]></content>
