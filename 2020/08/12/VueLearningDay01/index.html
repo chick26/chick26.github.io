@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Chick&#39;s Bloo^_^oog">
 <meta property="og:description" content="Day One 大纲一、邂逅Vue 认识 Vue.js 为什么学习Vue Vue的渐进式 Vue的特点   安装Vue CDN引入 下载引入 npm安装   Vue使用 mustache - Vue响应式 Vue列表展示 - v-for Vue计数器 - 事件监听   Vue的MVVM Vue的Option el \ data \ methods 生命周期函数    二、插值语法 mustache">
 <meta property="og:locale" content="zn-Hans">
-<meta property="og:updated_time" content="2020-08-17T06:31:43.647Z">
+<meta property="og:updated_time" content="2020-08-17T06:59:26.942Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VueLearningDay01">
 <meta name="twitter:description" content="Day One 大纲一、邂逅Vue 认识 Vue.js 为什么学习Vue Vue的渐进式 Vue的特点   安装Vue CDN引入 下载引入 npm安装   Vue使用 mustache - Vue响应式 Vue列表展示 - v-for Vue计数器 - 事件监听   Vue的MVVM Vue的Option el \ data \ methods 生命周期函数    二、插值语法 mustache">
@@ -357,7 +357,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2.5k
+                  2.7k
                 </span>
               
 
@@ -432,6 +432,7 @@
 </li>
 <li>案例一： fullname</li>
 <li>案例二： totalprice</li>
+<li>案例三： setter &amp; getter</li>
 </ul>
 <h1 id="Vue-js"><a href="#Vue-js" class="headerlink" title="Vue.js"></a>Vue.js</h1><h2 id="Vue-js安装"><a href="#Vue-js安装" class="headerlink" title="Vue.js安装"></a>Vue.js安装</h2><ul>
 <li><p>方法一<br><br>直接CND引入</p>
@@ -538,6 +539,22 @@
 </li>
 <li><p>复杂操作</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1.0"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>计算属性<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 复杂操作 显示书总价--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h2</span>&gt;</span>总价格：&#123;&#123;TotalPrice&#125;&#125; <span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"./js/vue.js"</span>&gt;</span> <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">        const app = new Vue(&#123;</span><br><span class="line">            el: '#app',</span><br><span class="line">            data:&#123;</span><br><span class="line">                books: [</span><br><span class="line">                    &#123;id: 110, name: '红楼梦', price: 119&#125;,</span><br><span class="line">                    &#123;id: 111, name: '三国演义', price: 100&#125;,</span><br><span class="line">                    &#123;id: 112, name: '西游记', price: 19&#125;,</span><br><span class="line">                    &#123;id: 113, name: '水浒传', price: 29&#125;,</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            methods:&#123;</span><br><span class="line">                GetFullName()&#123;</span><br><span class="line">                    return this.firstName + ' ' + this.lastName</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            computed:&#123;</span><br><span class="line">                //filter\map\reduce</span><br><span class="line">                TotalPrice: function()&#123;</span><br><span class="line">                    let result = 0</span><br><span class="line">                    for (let i=0; i &lt; this.books.length; i++)&#123;</span><br><span class="line">                        result += this.books[i].price</span><br><span class="line">                    &#125;</span><br><span class="line">                    return result</span><br><span class="line">                    // for (let i in this.books)&#123;</span><br><span class="line">                    //   this.book[i]</span><br><span class="line">                    // &#125;</span><br><span class="line">                    // for (let book of this.books)&#123;</span><br><span class="line"></span><br><span class="line">                    // &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>完整写法</p>
+</li>
+<li><p>每个计算属性都包含一个getter和一个setter</p>
+<ul>
+<li>在上面的例子中，我们只是使用getter来读取。</li>
+<li>在某些情况下，你也可以提供一个setter方法（不常用）。</li>
+<li>在需要写setter的时候，代码如下：<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">FullName_Whole: &#123;</span><br><span class="line">  set: function(newValue)&#123;</span><br><span class="line">    // console.log('-----', newValue)</span><br><span class="line">    const names = newValue.split(' ');</span><br><span class="line">    this.firstName = names[0];</span><br><span class="line">    this.lastName = names[1];</span><br><span class="line">  &#125;,</span><br><span class="line">  get: function()&#123;</span><br><span class="line">    return this.firstName + ' ' + this.lastName</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>计算属性与方法的对比</p>
+<ul>
+<li>计算属性会有缓存，只计算一次</li>
+<li>方法每次都要进行调用，会多次计算</li>
+</ul>
 </li>
 </ul>
 
@@ -709,7 +726,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
